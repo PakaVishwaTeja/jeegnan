@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log_In</title>
+    <link rel="icon" type="image/png" href="PNG.png"/>
+    <style>
+      @media (min-width:1000px){
+    #login {
+        width: 25%;
+        margin: auto;
+        
+        
+        background-color:whitesmoke;
+        height: 550px;
+        border-radius: 15px;
+        padding: 50px;
+        padding-top: 10px;
+        margin-top: 30px;
+        box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
+    
+    }
+    #logindiv{
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    body {
+    
+        background: #3282b8; /* Old browsers */
+        background: -moz-linear-gradient(top, #3282b8 0%, #e6255d 100%, #7db9e8 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #3282b8 0%,#e6255d 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(-135deg, #3282b8 0%,#e6255d 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        
+      }
+    
+    .inputs {
+        padding: 5px;
+        margin: 50px;
+    }
+    #button {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #error {
+      
+      width: 25%;margin: auto; margin-top: 10px; box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
+    ; background-color: whitesmoke; border-radius: 5px; text-align: center;padding: 5px;
+      }
+    
+}
+
+@media(max-width:999px){
+
+    #login {
+        width: 75%;
+        margin: auto;
+        
+        background-color:whitesmoke;
+        height: 550px;
+        border-radius: 15px;
+        padding: 50px;
+        padding-top: 10px;
+        margin-top: 30px;
+        box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
+    
+    }
+    #logindiv{
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    body {
+    
+        background: #3282b8; /* Old browsers */
+        background: -moz-linear-gradient(top, #3282b8 0%, #e6255d 100%, #7db9e8 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #3282b8 0%,#e6255d 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(-135deg, #3282b8 0%,#e6255d 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        
+      }
+    
+    .inputs {
+        padding: 5px;
+        margin: 50px;
+    }
+    #button {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #error {
+      
+      width: 75%;margin: auto; margin-top: 10px; box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
+    ; background-color: whitesmoke; border-radius: 5px; text-align: center;padding: 5px;
+      }
+
+
+
+}
+    </style>
+
+</head>
+<body>
+    <div id="error">
+      ❌ invalid credentials!
+      </div>
+       
+    <div id="login">
+        <div id="logindiv"> <img   src="PNG.png" alt="logo" width="100px">
+            <h3 style="text-align: center;">Login</h3>
+        </div>
+      
+       <form>
+        <div class="form-group">
+          <label class="tags">Email address</label>
+          <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+          <small class="tags" id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label class="tags" style="text-align: left;" for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="InputPassword1">
+        </div>
+       <div id="button">       
+         <button style="margin-top:20px ;" type="submit" class="btn btn-primary">SignUp</button>
+        <button style="margin-top:20px ;" type="submit" class="btn btn-primary">Log In</button>
+       </div>
+      </form>
+    </div>
+</body>
+</html>

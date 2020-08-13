@@ -1,0 +1,231 @@
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <link rel="icon" type="image/png" href="PNG.png" />
+    <style>
+      @media (min-width: 1000px) {
+        #login {
+          width: 25%;
+          margin: auto;
+
+          background-color: whitesmoke;
+          height: 680px;
+          border-radius: 15px;
+          padding: 50px;
+          padding-top: 10px;
+          margin-top: 10px;
+          box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+        }
+        #logindiv {
+          text-align: center;
+          padding: 20px;
+          margin-bottom: 10px;
+        }
+        body {
+          background: #3282b8; /* Old browsers */
+          background: -moz-linear-gradient(
+            top,
+            #3282b8 0%,
+            #e6255d 100%,
+            #7db9e8 100%
+          ); /* FF3.6-15 */
+          background: -webkit-linear-gradient(
+            top,
+            #3282b8 0%,
+            #e6255d 100%,
+            #7db9e8 100%
+          ); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(
+            -135deg,
+            #3282b8 0%,
+            #e6255d 100%,
+            #7db9e8 100%
+          ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        }
+
+        .inputs {
+          padding: 5px;
+          margin: 50px;
+        }
+        #button {
+          display: flex;
+          justify-content: space-around;
+          padding: 20px;
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+        #error {
+          width: 25%;
+          margin: auto;
+          margin-top: 10px;
+          box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+          background-color: whitesmoke;
+          border-radius: 5px;
+          text-align: center;
+          padding: 5px;
+        }
+      }
+
+      @media (max-width: 999px) {
+        #login {
+          width: 75%;
+          margin: auto;
+
+          background-color: whitesmoke;
+          height: 680px;
+          border-radius: 15px;
+          padding: 50px;
+          padding-top: 10px;
+          margin-top: 10px;
+          box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+        }
+        #logindiv {
+          text-align: center;
+          padding: 20px;
+          margin-bottom: 10px;
+        }
+        body {
+          background: #3282b8; /* Old browsers */
+          background: -moz-linear-gradient(
+            top,
+            #3282b8 0%,
+            #e6255d 100%,
+            #7db9e8 100%
+          ); /* FF3.6-15 */
+          background: -webkit-linear-gradient(
+            top,
+            #3282b8 0%,
+            #e6255d 100%,
+            #7db9e8 100%
+          ); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(
+            -135deg,
+            #3282b8 0%,
+            #e6255d 100%,
+            #7db9e8 100%
+          ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        }
+
+        .inputs {
+          padding: 5px;
+          margin: 50px;
+        }
+        #button {
+          display: flex;
+          justify-content: space-around;
+          padding: 20px;
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+        #error {
+          width: 60%;
+          margin: auto;
+          margin-top: 10px;
+          box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+          background-color: whitesmoke;
+          border-radius: 5px;
+          text-align: center;
+          padding: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="login">
+      <div id="logindiv">
+        <img src="PNG.png" alt="logo" width="100px" />
+        <h3 style="text-align: center;">Sign Up</h3>
+      </div>
+
+      <form>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="First Name"
+            id="firstname"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Last Name"
+            id="LastName"
+          />
+        </div>
+        <div class="form-group">
+          <span
+            ><i class="fa fa-phone" id="i6"></i>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Phone number"
+              title="must contain 10 digits"
+              required
+              pattern="[0-9]{10}"
+          /></span>
+        </div>
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            placeholder="email"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Password"
+            id="Password"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Confirm Password"
+            id="Password"
+          />
+        </div>
+        <div class="dropdown">
+          <select
+            id="inp6"
+            name="Class"
+            class="btn dropdown-toggle"
+            style="background-color: white; border: 1px solid #dbdbdb;"
+          >
+            <option value="tenth">Completed Tenth</option>
+            <option value="+1">Completed 11th</option>
+            <option value="+2">Completed 12th</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+        <div id="button">
+          <button
+            style="
+              margin-top: 20px;
+              padding: 10px 60px 10px 60px;
+              border-radius: 10px;
+            "
+            type="submit"
+            class="btn btn-primary"
+          >
+            SignUp
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

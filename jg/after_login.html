@@ -1,0 +1,172 @@
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log_In</title>
+    <link rel="icon" type="image/png" href="PNG.png" />
+    <style>
+      body {
+        background: #3282b8; /* Old browsers */
+        background: -moz-linear-gradient(
+          top,
+          #3282b8 0%,
+          #e6255d 100%,
+          #7db9e8 100%
+        ); /* FF3.6-15 */
+        background: -webkit-linear-gradient(
+          top,
+          #3282b8 0%,
+          #e6255d 100%,
+          #7db9e8 100%
+        ); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(
+          -135deg,
+          #3282b8 0%,
+          #e6255d 100%,
+          #7db9e8 100%
+        );
+      }
+      @media (min-width: 1000px) {
+        #user_page {
+          width: 75%;
+          margin: auto;
+
+          background-color: whitesmoke;
+          height: 90vh;
+          border-radius: 15px;
+          padding: 50px;
+          padding-top: 10px;
+          margin-top: 30px;
+          box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+        }
+        #head {
+          display: flex;
+          justify-content: space-between;
+          margin: 3vh;
+        }
+        #user_info {
+          padding: 1vh;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+        #info {
+            padding-top: 1vh; padding-left: 2vh;
+        }
+        #links {
+            display: flex;
+            flex-direction: column;
+
+          }
+          #links a {
+            padding: 1vh;
+      }
+    }
+      @media (max-width: 999px) {
+        #user_page {
+          width: 90%;
+          margin: auto;
+
+          background-color: whitesmoke;
+          height: auto;
+          border-radius: 15px;
+          padding: 20px;
+          padding-top: 10px;
+          
+          margin-top: 30px;
+          margin-bottom: 30px;
+          box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+        }
+        #head {
+          display: flex;
+          justify-content: space-between;
+        }
+        #head img {
+          width: 10vh;
+        }
+        #user_info h5 {
+          font-size: 15px;
+        }
+        #user_info {
+          padding: 1vh;
+          display: flex;
+          flex-direction: row;
+        }
+        #main {
+          padding-top: 3vh;
+          padding-left: 2.5vh;
+          display: flex;
+          flex-direction: column;
+        }
+        #quiz {
+          padding-top: 3vh;
+        }
+        #links {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+        }
+        #links a {
+          padding: 1vh;
+        }
+        #info {
+            padding-top: 1.5vh; padding-left: 1vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="user_page">
+      <div id="head">
+        <div>
+          <img src="PNG.png" alt="logo" width="100px" />
+        </div>
+        <div id="user_info">
+          <div id="icon">
+            <svg
+              width="65px"
+              height="65px"
+              viewBox="0 0 16 16"
+              class="bi bi-person-circle"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"
+              />
+              <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+              <path
+                fill-rule="evenodd"
+                d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"
+              />
+            </svg>
+          </div>
+          <div id="info">
+            <h5>vishwa</h5>
+            <h5>12</h5>
+          </div>
+        </div>
+      </div>
+      <div id="main">
+        <div id="greeting"><h2>hey!! {{name}}</h2></div>
+        <div id="quiz">
+          <h5>These quizzes are live now!!<br> go ahed and participate!</h5>
+          <div id="links">
+              <div><a href=""><h1>quiz_1</h1></a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis, perspiciatis itaque saepe eveniet veritatis consequuntur nam ea perferendis at exercitationem amet sit, labore repellat quam! Ab provident corrupti quidem!</p></div>
+            
+            <div id="links">
+                <div><a href=""><h1>quiz_2</h1></a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis, perspiciatis itaque saepe eveniet veritatis consequuntur nam ea perferendis at exercitationem amet sit, labore repellat quam! Ab provident corrupti quidem!</p></div>
+                        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
